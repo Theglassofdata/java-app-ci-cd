@@ -11,7 +11,7 @@ pipeline {
             agent any
             steps {
                 cleanWs()
-                git branch: 'master', url: 'https://github.com/Theglassofdata/java-app-ci-cd.git'
+                // Git checkout is already handled by Jenkins' SCM config
             }
         }
 
