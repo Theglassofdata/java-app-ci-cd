@@ -10,7 +10,7 @@ pipeline {
         stage('Clean Workspace') {
             agent any
             steps {
-                cleanWs()
+                echo 'Skipping workspace cleanup'
                 // Git checkout is already handled by Jenkins' SCM config
             }
         }
