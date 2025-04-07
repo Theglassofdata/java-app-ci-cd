@@ -11,7 +11,7 @@ pipeline {
             agent any
             steps {
                 cleanWs()
-                git branch: 'main', url: 'https://github.com/Theglassofdata/java-app-ci-cd.git'
+                git branch: 'master', url: 'https://github.com/Theglassofdata/java-app-ci-cd.git'
             }
         }
 
